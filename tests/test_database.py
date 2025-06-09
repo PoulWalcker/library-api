@@ -3,7 +3,7 @@ from app.models.base import Base
 from sqlalchemy import text
 
 
-def test_db_connection():
+def test_db_connection():  # ToDo: convert to pytest
     Base.metadata.create_all(bind=engine)
     db = SessionLocal()
     try:
@@ -11,6 +11,3 @@ def test_db_connection():
         assert result == [(1,)]
     finally:
         db.close()
-
-
-test_db_connection()

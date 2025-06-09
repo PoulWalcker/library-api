@@ -3,7 +3,6 @@ from sqlalchemy.orm import sessionmaker
 from app.models.base import Base
 from config import settings
 
-
 from app.models.user import User
 from app.models.book import Book
 from app.models.borrowed_book import BorrowedBook
