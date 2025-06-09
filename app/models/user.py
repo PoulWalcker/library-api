@@ -1,4 +1,5 @@
-from base import Base
+from .base import Base
+from .role import Role
 from sqlalchemy import Column, Integer, String, ForeignKey
 from sqlalchemy.orm import relationship
 
